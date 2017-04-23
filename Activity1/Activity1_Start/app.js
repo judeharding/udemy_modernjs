@@ -1,3 +1,3 @@
 var name = "Jude";
 
-document.write("Welcome " + name + "!");
+console.log("Welcome " + name + "!");

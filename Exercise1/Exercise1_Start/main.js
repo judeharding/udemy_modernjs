@@ -8,6 +8,7 @@ var daySpan = function(date){
   var div = 1000 * 60 * 60 * 24;
   return (Math.floor((currDate - startDate) / div))
 }
+var x = new Date();
 
 console.log("Hello " + firstName + " " + lastName + "!");
 console.log("Today is " + date);

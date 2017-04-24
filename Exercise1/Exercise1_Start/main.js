@@ -1,7 +1,7 @@
 var firstName = "Jude";
 var lastName = "Harding";
 var date = new Date();
-//cmt
+
 var daySpan = function(date){
   var startDate = new Date(date);
   var currDate = new Date();

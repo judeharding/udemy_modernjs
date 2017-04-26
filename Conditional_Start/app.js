@@ -1,5 +1,15 @@
-var num = 6;
+// var num = 6;
+//
+// var mod = num % 2;
+//
+// console.log(mod);
 
-var mod = num % 2;
+var userName;
 
-console.log(mod);
+userName = null;
+
+if ((userName !== undefined) && (userName !== null)){
+    console.log("User is: " + userName);
+} else {
+    console.log ("User is not defined");
+}

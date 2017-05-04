@@ -25,7 +25,7 @@
 var fibSeq = function(len) {
     var seq = [0, 1],
         newNum = 0;
-
+// for loops b/c you KNOW the length of the array requested.
     for (let i = 2;i < len;i++) {
         seq[i] = seq[i - 1] + seq[i - 2];
     }

@@ -11,7 +11,8 @@ var user1 = {
     age: 40,
     birthDate: birthDate,
     fullName: function() {
-        return this.firstName + " " + this.lastName;
+      //THIS can replace user1.
+        return user1.firstName + " " + this.lastName;
     },
     incrementAge: function() {
         this.age++;

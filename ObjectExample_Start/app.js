@@ -1,7 +1,7 @@
 //Data from the program
 var firstName = "Steven";
 var surName = "Hancock";
-var birthDate = new Date("8/18/1990");
+var birthDate = new Date("5/7/1990");
 
 
 //User connects
@@ -27,3 +27,5 @@ var user1 = {
         this.incrementAge();
     }
 };
+
+user1.loginCheck();

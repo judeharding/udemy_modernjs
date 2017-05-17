@@ -34,27 +34,31 @@ use default value. Then display damage per second*/
 
 //---------------------
 //constructor function -- i missed this one
+//
+// function Character(speed, strength, hitpoints){
+//   if (speed) {  //truthy if value provided = true if not, = false
+//     this.speed = speed;
+//   }
+//   if (strength) { //truthy if value provided = true if not, = false
+//     this.strength = strength;
+//   }
+//   if (hitpoints) { //truthy if value provided = true if not, = false
+//     this.hitpoints = hitpoints;
+//   }
+// }
+//
+// Character.prototype.speed = 6;  // sets default values
+// Character.prototype.strength = 8;
+// Character.prototype.hitpoints = 150;
+//
+// Character.prototype.damage = function(){
+//   return this.speed * this.strength;
+// };
+//
+// var character1 = new Character (9, null, 205); // overwrites the defaults above and the null will indicate noting being passed in.
+//
+// console.log(character1.damage());
 
-function Character(speed, strength, hitpoints){
-  if (speed) {  //truthy if value provided = true if not, = false
-    this.speed = speed;
-  }
-  if (strength) { //truthy if value provided = true if not, = false
-    this.strength = strength;
-  }
-  if (hitpoints) { //truthy if value provided = true if not, = false
-    this.hitpoints = hitpoints;
-  }
-}
 
-Character.prototype.speed = 6;  // sets default values
-Character.prototype.strength = 8;
-Character.prototype.hitpoints = 150;
-
-Character.prototype.damage = function(){
-  return this.speed * this.strength;
-};
-
-var character1 = new Character (9, null, 205); // overwrites the defaults above and the null will indicate noting being passed in.
-
-console.log(character1.damage());
+//---------------------
+//Obj.Create - WIP

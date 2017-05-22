@@ -33,7 +33,7 @@ use default value. Then display damage per second*/
 
 
 //---------------------
-//constructor function -- i missed this one
+//CONSTRUCTOR FUNCTION -- i missed this one
 //
 // function Character(speed, strength, hitpoints){
 //   if (speed) {  //truthy if value provided = true if not, = false
@@ -61,4 +61,32 @@ use default value. Then display damage per second*/
 
 
 //---------------------
-//Obj.Create - WIP
+//CLASS DEFINITION  (the object created is  different)
+
+class Character {
+  constructor(speed, strength, hitpoints){
+    //definitions of the parameters and get placed actual object -- not the prototype
+    if (speed) {
+      this.speed = speed;
+    }
+    if (strength) {
+      this.strength = strength;
+    }
+    if (hitpoints) {
+      this.hitpoints = hitpoints;
+    }
+  }
+  // this method gets placed on the prototype
+  damage(){
+    return this.speed * this.strength;
+  }
+}
+// now, how to get the defaults Set
+
+Character.prototype.speed = 6;
+Character.prototype.strength = 8;
+Character.prototype.hitpoints = 150;
+
+
+var char1 = new Character (9, null, 205);
+console.log(char1.damage());

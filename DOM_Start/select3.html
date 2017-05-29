@@ -12,13 +12,13 @@
     <div id="content">
         <h1>Selecting Exercise</h1>
         <div class="bullets">
-            <ol>
+            <ul>
                 <li id="b1">Using different select methods</li>
                 <li id="b2">You can select different items on an HTML page.</li>
                 <li id="b3">You can select by <span class="bulletblue">ID</span>.</li>
                 <li id="b4">You can select by <span class="bulletblue">tag</span>.</li>
                 <li id="b5">And you can select by <span class="bulletblue">CSS class</span>.</a></li>
-            </ol>
+            </ul>
         </div>
     </div>
     <footer>
@@ -26,25 +26,3 @@
     </footer>
 </body>
 </html>
-
-
-<!-- // in the console
-var spans = document.GetElementsByTagName("span");
-spans // will return an array of 3 spans listed above
-console.log(spans[0]);  // lists the 1st span tag
-console.dir(spans[0]);  // returns all of the attributes available
-dir(spans[0]) // does the same above
-
-// dir is a tool to learn what options are available to each node in the DOM -->
-
-
-<!-- another way to select nodes with css
-querySelector() vs querySelectorAll() // the previous only grabs the first node in the DOM
-the stuff in the parens are css selectors -->
-
-
-
-getelementsbyname or dotsyntax will allow you to access the element
-in con-log, var node = document.querySelector('#content'); // will give you all of the nodes within the CONTENT div.
-node.parentNode;  // will return the body tag
-node.nextSibling; // will return #text

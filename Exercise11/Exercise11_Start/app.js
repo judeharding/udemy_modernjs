@@ -18,3 +18,11 @@ var tableObj = {
 };
 
 console.log("working");
+
+
+var fillTable = function(obj) {
+    var tableHeadNodes = document.querySelectorAll("#table th"),
+        tableNodes = document.querySelectorAll("#table td"),
+        methods = obj.methods,
+        descriptions = obj.descriptions,
+        loc = 0;

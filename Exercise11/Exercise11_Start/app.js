@@ -19,10 +19,26 @@ var tableObj = {
 
 console.log("working");
 
-//
-// var fillTable = function(obj) {
-//     var tableHeadNodes = document.querySelectorAll("#table th"),
-//         tableNodes = document.querySelectorAll("#table td"),
-//         methods = obj.methods,
-//         descriptions = obj.descriptions,
-//         loc = 0;
+
+var fillTable = function(obj) {
+    // var tableHeadNodes = document.querySelectorAll("#table th");  WHY DO YOU NEED THE ID OF TABLE?
+    var tableHeadNodes = document.querySelectorAll("th");
+    // var tableDataNodes = document.querySelectorAll("#table td"); WHY DO YOU NEED THE ID OF TABLE?
+    var tableDataNodes = document.querySelectorAll("td");
+    var methods = obj.methods;
+    var descriptions = obj.descriptions;
+    var loc = 0;
+
+    // 2 table heads aka columns
+    tableHeadNodes[0].innerHTML = obj.methodHead;
+    tableHeadNodes[1].innerHTML = obj.descHead;
+
+    // 4 table datas aka rows
+    for (let i = 0; i < tableDataNodes.length; i++) {
+        tableDataNodes[i].innerHTML = methods[loc];
+        tableDataNodes[++i].innerHTML = descriptions[loc];
+        loc++;
+        }
+};
+
+fillTable(tableObj);

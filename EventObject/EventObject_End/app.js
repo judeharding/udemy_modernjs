@@ -28,9 +28,15 @@ function init() {
             ul.childNodes[clickCnt].style.color = "green";
         }
         clickCnt++;*/
-        e.target.style.color = "green";
+        e.target.style.color = "blue";
+
+        // if (e.target.style.color = "black"){
+        //     e.target.style.color = "blue";
+        // } else {
+        //     e.target.style.color = "black";
+        // }
+
     });
 }
 
 window.addEventListener("load", init);
-

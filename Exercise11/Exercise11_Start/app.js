@@ -29,6 +29,7 @@ var fillTable = function(obj) {
     var descriptions = obj.descriptions;
     var loc = 0;
 
+    // WHY don't you loop through the head nodes?
     // 2 table heads aka columns
     tableHeadNodes[0].innerHTML = obj.methodHead;
     tableHeadNodes[1].innerHTML = obj.descHead;
